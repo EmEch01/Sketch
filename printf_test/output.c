@@ -3,12 +3,10 @@
 
 /**
 * _printf - Prints formatted output to stdout.
+* @format: A string containing format specifiers.
+* @... : A variable number of arguments to be formatted.
 *
-* Args:
-* format: A string containing format specifiers.
-*   ... : A variable number of arguments to be formatted.
-*
-* Returns: The number of characters printed
+* Return: The number of characters printed
 */
 
 int _printf(const char *format, ...)
