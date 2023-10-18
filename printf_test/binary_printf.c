@@ -81,3 +81,21 @@ i++;
 write_result = write_unsgnd(0, i, buffer, flags, width, precision, size);
 return (write_result);
 }
+
+/**
+* print_hexadecimal_notation - In hexadecimal notation
+* @types: List of arguments
+* @buffer: Buffer array to handle print
+* @flags: Calculates active flags
+* @width: Width
+* @precision: Precision specifier
+* @size: Size to specifier
+* Return: Number of characters printed
+*/
+int print_hexadecimal_notation(va_list types, char buffer[],
+int flags, int width, int precision, int size)
+{
+int result = print_hexa(types, "0123456789abcdef", buffer,
+flags, 'x', width, precision, size);
+return (result);
+}
